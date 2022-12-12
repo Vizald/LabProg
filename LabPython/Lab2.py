@@ -10,14 +10,14 @@ if number == 1:
         print("G = ", round(G, 5))
     else:
         print("На ноль делить нельзя ^-^")
-if number == 2:
+elif number == 2:
     F = math.cos(20 * a ^ 2 - 57 * a * x + 40 * x ^ 2)
     print("F = ", round(F, 5))
-if number == 3:
+elif number == 3:
     if (10 * a ^ 2 + 13 * a * x + 3 * x ^ 2 + 1) >= 0:
         Y = math.log(10 * a ^ 2 + 13 * a * x + 3 * x ^ 2 + 1)
         print("Y = ", round(Y, 5))
     else:
         print("Log отрицательный =(")
 else:
-        print("Вы ввели неправильную переменную :(")
+    print("Вы ввели неправильную переменную :(")

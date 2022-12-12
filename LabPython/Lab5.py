@@ -15,9 +15,9 @@ def evendef(n):
 
 
 while True:
+    number = int(input("Какую переменную ищем?(1-3; 1-G, 2-F, 3-Y): "))
     a = int(input("Enter a "))
     x = int(input("Enter x "))
-    number = int(input("Какую переменную ищем?(1-3; 1-G, 2-F, 3-Y): "))
     count = int(input("Сколько шагов?: "))
     border = int(input("Граница изменения x: "))
     word = input("Введите число для поиска совпадений: ")
@@ -50,7 +50,7 @@ while True:
             continue
         else:
             break
-    if number == 2:
+    elif number == 2:
         for i in range(count):
             F = math.cos(20 * a ^ 2 - 57 * a * x + 40 * x ^ 2)
             table.add_row([round(F, 5), x])
@@ -75,7 +75,7 @@ while True:
             continue
         else:
             break
-    if number == 3:
+    elif number == 3:
         for i in range(count):
             if (10 * a ^ 2 + 13 * a * x + 3 * x ^ 2 + 1) >= 0:
                 Y = math.log(10 * a ^ 2 + 13 * a * x + 3 * x ^ 2 + 1)
